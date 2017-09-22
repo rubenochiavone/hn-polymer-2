@@ -182,7 +182,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
       _fetch(url) {
         // scroll to top when fetching
-        document.body.scrollTop = 0;
+        window.scrollTo(0, 0);
         this._loading = true;
         return fetch(url).then(response => {
           return response.json().then(data => {
